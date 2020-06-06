@@ -1,0 +1,16 @@
+{{#each weather}}
+<img src="https://openweathermap.org/img/wn/{{this.icon}}@2x.png" alt="" class="wether-img" />
+{{/each}}
+<div class="weather-city"><span>{{name}} {{sys.country}}</span></div>
+<div class="weather-main-temp">
+  <span class="weather-main-temp__sp weather-main-temp__js"> {{ main.temp}} </span><span class="mainspdeg">
+    &deg;</span>
+</div>
+<div class="weather-minmax-cont">
+  <div class="weather-mintemp">
+    <span class="minsp">min</span><br /><span class="minsptemp">{{ main.temp_min}}&deg;</span>
+  </div>
+  <div class="weather-maxtemp">
+    <span class="minsp">max</span><br /><span class="minsptemp">{{ main.temp_max}}&deg;</span>
+  </div>
+</div>
